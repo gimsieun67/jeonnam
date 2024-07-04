@@ -28,7 +28,7 @@ header {
   font-weight: 700;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.navTxT > li, .login > li {
+.navTxT > li > a, .login > li > a {
   border-bottom: 2px solid antiquewhite;
   transition: 0.3s;
 }
@@ -37,8 +37,13 @@ gap: 90px;
 }
 .login {
   gap: 30px;
+  align-items: center;
 }
-.navTxT > li:hover, .login > li:hover {
+.login > p {
+  font-size: 40px;
+  font-weight: 100;
+}
+.navTxT > li > a:hover, .login > li > a:hover {
   color: rgb(253, 180, 85);
   border-bottom: solid 2px black;
 }
