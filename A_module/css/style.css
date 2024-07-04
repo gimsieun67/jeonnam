@@ -38,6 +38,9 @@ gap: 90px;
 .login {
   gap: 30px;
 }
+.login > p {
+  
+}
 .navTxT > li > a:hover, .login > li > a:hover {
   color: rgb(253, 180, 85);
   border-bottom: solid 2px black;
