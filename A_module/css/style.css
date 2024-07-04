@@ -37,11 +37,6 @@ gap: 90px;
 }
 .login {
   gap: 30px;
-  align-items: center;
-}
-.login > p {
-  font-size: 40px;
-  font-weight: 100;
 }
 .navTxT > li > a:hover, .login > li > a:hover {
   color: rgb(253, 180, 85);
@@ -80,4 +75,49 @@ dialog {
   width: 40px;
   background-color: white;
   color: rgb(74, 74, 74);
+}
+.bg {
+  width: 400px;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgi1 {
+  background-image: url("../images/1.jpg");
+}
+.bgi2 {
+  background-image: url("../images/16.jpg");
+}
+.bgi4 {
+  background-image: url("../images/2.jpg");
+}
+.bgi5 {
+  background-image: url("../images/6.jpg");
+}
+.bgi3 {
+  background-image: url("../images/18.jpg");
+}
+.slideAll {
+  width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slide {
+  gap: 80px;
+}
+.slideCount {
+  font-size: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.slidebtn {
+  justify-content:center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.slidebtn > button {
+  width: 80px;
+  height: 30px;
+  background-color: white;
+  font-weight: 700;
 }
