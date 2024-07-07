@@ -99,4 +99,3 @@ hoverBg.addEventListener('mouseleave', () => {
 // 마우스 커서를 숨기고 이미지만 보이게 설정
 hoverBg.style.cursor = 'none'; // 전체 문서에서 마우스 커서 숨기기
   hoverImg.style.display = 'none'; // 초기에 이미지 숨기기
-});
