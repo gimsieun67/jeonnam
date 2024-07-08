@@ -43,6 +43,7 @@ header {
 .navTxT > li > a, .login > li > a {
   border-bottom: 2px solid antiquewhite;
   transition: 0.3s;
+  cursor: none;
 }
 .navTxT {
 gap: 90px;
@@ -54,12 +55,33 @@ gap: 90px;
 .login > p {
   font-size: 40px;
   font-weight: 100;
-  color: g;
+  color: gray;
 }
-.navTxT > li > a:hover, .login > li > a:hover {
+/* .navTxT > li > a:hover, .login > li > a:hover {
   color: rgb(253, 180, 85);
   border-bottom: solid 2px black;
+} */
+
+.navTxT a, .login a{
+  position: relative;
 }
+
+.navTxT a::after, .login > li > a::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: #a837ac;
+  left: 50%;
+  bottom: -30px;
+  transition: .25s;
+}
+
+.navTxT a:hover::after, .login > li > a:hover::after{
+  left: 0;
+  width: 100%;
+}
+
 /* 다이어로그 */
 dialog {
   position: fixed;
@@ -229,4 +251,12 @@ dialog {
   height: 30px;
   background-color: white;
   font-weight: 700;
+}
+.graph  li {
+  width: 30px;
+  height: 100px;
+  border: solid 1px black;
+} 
+.gBox {
+  display: flex;
 }
