@@ -252,11 +252,17 @@ dialog {
   background-color: white;
   font-weight: 700;
 }
-.graph  li {
+.graph {
+  justify-content: center;
+  gap: 30%;
+  margin-top: 20%;
+}
+.graph > div  li {
   width: 30px;
   height: 100px;
   border: solid 1px black;
-} 
+}
 .gBox {
-  display: flex;
+  margin-top: 60%;
+  gap: 40px;
 }
