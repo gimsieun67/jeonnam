@@ -100,5 +100,9 @@ hoverBg.addEventListener('mouseleave', () => {
 hoverBg.style.cursor = 'none'; // 전체 문서에서 마우스 커서 숨기기
   hoverImg.style.display = 'none'; // 초기에 이미지 숨기기
 })
+const a = document.querySelector(".a")
+const g = document.querySelector(".g-2 > li")
 
-console.log(document.querySelector('.graph').dataset.num);
+a.addEventListener("click", ()=> {
+   g.style.height = "400px"
+})

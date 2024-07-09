@@ -258,8 +258,8 @@ dialog {
   margin-top: 20%;
 }
 .graph > div  li {
-  width: 30px;
-  height: 100px;
+  width: 60px;
+  height: 150px;
   border: solid 1px black;
 }
 .gBox {
