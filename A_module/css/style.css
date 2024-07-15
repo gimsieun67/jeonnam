@@ -4,26 +4,27 @@
   box-sizing: border-box;
 }
 /* body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-} */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+  } */
 a {
   display: block;
   text-decoration: none;
   color: #000;
 }
-ul,li {
+ul,
+li {
   list-style: none;
 }
 .flex {
   display: flex;
 }
-.container  {
+.container {
   width: 1000px;
   height: 100vh;
   margin: 0 auto;
@@ -37,16 +38,17 @@ header {
   align-items: center;
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   z-index: 3;
 }
-.navTxT > li > a, .login > li > a {
+.navTxT > li > a,
+.login > li > a {
   border-bottom: 2px solid antiquewhite;
   transition: 0.3s;
   cursor: none;
 }
 .navTxT {
-gap: 90px;
+  gap: 90px;
 }
 .login {
   gap: 30px;
@@ -58,15 +60,17 @@ gap: 90px;
   color: gray;
 }
 /* .navTxT > li > a:hover, .login > li > a:hover {
-  color: rgb(253, 180, 85);
-  border-bottom: solid 2px black;
-} */
+    color: rgb(253, 180, 85);
+    border-bottom: solid 2px black;
+  } */
 
-.navTxT a, .login a{
+.navTxT a,
+.login a {
   position: relative;
 }
 
-.navTxT a::after, .login > li > a::after{
+.navTxT a::after,
+.login > li > a::after {
   content: "";
   position: absolute;
   height: 2px;
@@ -74,10 +78,11 @@ gap: 90px;
   background-color: #a837ac;
   left: 50%;
   bottom: -30px;
-  transition: .25s;
+  transition: 0.25s;
 }
 
-.navTxT a:hover::after, .login > li > a:hover::after{
+.navTxT a:hover::after,
+.login > li > a:hover::after {
   left: 0;
   width: 100%;
 }
@@ -92,7 +97,7 @@ dialog {
   margin-left: 35%;
   margin-top: 5%;
   background-color: rgb(255, 253, 250);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   z-index: 1;
 }
@@ -123,26 +128,26 @@ dialog {
   position: relative;
   width: 600px;
   height: 200px;
- border: solid 1px gainsboro; 
- line-height: 50px;
+  border: solid 1px gainsboro;
+  line-height: 50px;
   margin: 0 auto;
- margin-top: 15%;
- padding-left: 20px; 
- border-radius: 10px;
- background-color: rgb(212, 212, 212);
+  margin-top: 15%;
+  padding-left: 20px;
+  border-radius: 10px;
+  background-color: rgb(212, 212, 212);
 }
 .notice > p {
   margin-top: 10%;
 }
 .cuser {
-   position: absolute;
-      display: none;
-      width: 90px; /* 원하는 크기로 조정 */
-      height: 90px; /* 원하는 크기로 조정 */
-      pointer-events: none; /* 이미지가 마우스 이벤트를 받지 않도록 설정 */
-      z-index: 1000; /* 다른 요소 위에 표시되도록 설정 */
-      cursor: none;
-      border-radius: 50px;
+  position: absolute;
+  display: none;
+  width: 90px; /* 원하는 크기로 조정 */
+  height: 90px; /* 원하는 크기로 조정 */
+  pointer-events: none; /* 이미지가 마우스 이벤트를 받지 않도록 설정 */
+  z-index: 1000; /* 다른 요소 위에 표시되도록 설정 */
+  cursor: none;
+  border-radius: 50px;
 }
 /* 3개 무한 슬라이드 */
 .viualAll {
@@ -159,21 +164,21 @@ dialog {
   animation: slideAnimation 10s infinite;
 }
 
-.viual>img {
+.viual > img {
   width: 1903px;
   height: 600px;
 }
 @keyframes slideAnimation {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 
   20% {
-      transform: translateX(-20%);
+    transform: translateX(-20%);
   }
 
   25% {
-      transform: translateX(-20%);
+    transform: translateX(-20%);
   }
   55% {
     transform: translate(-40%);
@@ -188,60 +193,58 @@ dialog {
     transform: translate(-60%);
   }
   100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
-
-
 
 /* 버튼 무한 슬라이드 */
 .slideAll {
   margin-top: 15%;
 }
 .slider {
-    width: 1020px; /* 3개의 슬라이드가 한 번에 보이도록 설정, 슬라이드 간격 반영 */
-    overflow: hidden;
-    margin: 0 auto;
-    /* border: 2px solid #ddd; */
-    margin-bottom: 10px;
+  width: 1020px; /* 3개의 슬라이드가 한 번에 보이도록 설정, 슬라이드 간격 반영 */
+  overflow: hidden;
+  margin: 0 auto;
+  /* border: 2px solid #ddd; */
+  margin-bottom: 10px;
 }
 
 .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: calc(340px * 9); /* 6 슬라이드 + 2 클론 슬라이드 + 1 여유 슬라이드 */
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(340px * 9); /* 6 슬라이드 + 2 클론 슬라이드 + 1 여유 슬라이드 */
 }
 
 .slide {
-    min-width: 300px;
-    margin: 0 20px; /* 각 슬라이드 사이에 20px 간격 추가 */
-    box-sizing: border-box;
-    text-align: center;
-    line-height: 100px;
-    background-color: #f0f0f0;
-    /* border-right: 2px solid #ddd; */
-        width: 400px;
-        height: 700px;
-        background-repeat: no-repeat;
-        background-size: cover;
+  min-width: 300px;
+  margin: 0 20px; /* 각 슬라이드 사이에 20px 간격 추가 */
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 100px;
+  background-color: #f0f0f0;
+  /* border-right: 2px solid #ddd; */
+  width: 400px;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bg1 {
-    background-image: url("../images/1.jpg");
+  background-image: url("../images/1.jpg");
 }
 .bg2 {
-    background-image: url("../images/16.jpg");
+  background-image: url("../images/16.jpg");
 }
 .bg3 {
-    background-image: url("../images/18.jpg");
+  background-image: url("../images/18.jpg");
 }
 .bg4 {
-    background-image: url("../images/2.jpg");
+  background-image: url("../images/2.jpg");
 }
 .bg5 {
-    background-image: url("../images/6.jpg");
+  background-image: url("../images/6.jpg");
 }
 .slidebtn {
-  justify-content:center;
+  justify-content: center;
   gap: 20px;
   margin-top: 20px;
   display: flex;
@@ -253,16 +256,28 @@ dialog {
   font-weight: 700;
 }
 .graph {
-  justify-content: center;
-  gap: 30%;
   margin-top: 20%;
 }
-.graph > div  li {
-  width: 60px;
-  height: 150px;
-  border: solid 1px black;
+.g-1 {
+  gap: 50px;
+  text-align: center;
 }
-.gBox {
-  margin-top: 60%;
-  gap: 40px;
+.g-1 > div > li  {
+  border: solid 3px black;
+  width: 70px;
+  height: 200px;
+}
+.graph1 {
+  gap: 40%;
+}
+
+.graphTxT > h2{
+  width: 300px;
+  height: 50px;
+  font-size: 21px;
+}
+.graphTxT  {
+  gap: 52%;
+  margin-left: 50px;
+  margin-bottom: 80px;
 }
